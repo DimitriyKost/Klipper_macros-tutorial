@@ -365,12 +365,12 @@ PRINT_START EXTRUDER_TEMP={first_layer_temperature[initial_extruder]} BED_TEMP=[
 
 В приведенном выше примере будет вызван макрос PRINT_START в начале файла GCode, передающий температуру экструдера, слоя и камеры, как определено в используемом профиле слайсера. Чтобы позволить слайсеру заменять фактические значения, команда использует “заполнители”10. При выводе окончательного GCode PS / SS заменит фактические значения вместо заполнителей. Например, если используемый профиль определяет температуру экструдера как 240 ° C, температуру слоя как 75 ° C и температуру камеры как 40 ° C, команда, появляющаяся в файле GCode, будет иметь вид:
 
-PRINT_START EXTRUDER_TEMP=240 BED_TEMP=75 CHAMBER_TEMP=40
+    PRINT_START EXTRUDER_TEMP=240 BED_TEMP=75 CHAMBER_TEMP=40
 
 #### Cura
 Место, где можно добавить аналогичный пользовательский G-код в Cura, находится в окне “Запустить G-код” на экране “Настройки устройства -> Принтер”.
 
-PRINT_START EXTRUDER_TEMP={material_print_temperature_layer_0} BED_TEMP={material_bed_temperature_layer_0} CHAMBER_TEMP={build_volume_temperature}
+    PRINT_START EXTRUDER_TEMP={material_print_temperature_layer_0} BED_TEMP={material_bed_temperature_layer_0} CHAMBER_TEMP={build_volume_temperature}
 
 GCode Cura очень похож, за исключением имен-заполнителей11.
 
