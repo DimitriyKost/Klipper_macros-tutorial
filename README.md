@@ -1,6 +1,6 @@
 # Учебник по макросам для Klippera
 Makros Klipper Tutorial - https://klipper.discourse.group/t/macro-creation-tutorial/30/2
-
+21 марта 2021 года
 
 ## Часть 1: Основные концепции программирования
 
